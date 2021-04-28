@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Disponibles</title>
+
+    <!--Boostrap CSS -->
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+    <!-- CSS Propios -->
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css"> 
+
+    <!--Logo de la pagina-->
+    <link rel="icon" href="assets/img/17abd3e37a5d07b0251603af43db0caf.png" type="image/png">
+
+    <!--Titulo de la pagina-->
+    <title>Productos Disponibles</title>
+</head>
+<body>
+    
+    <!--navbar-->
+  <div class="fixed-top" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+      <div class="container">
+        <a href="index.html" title="Veggies" class="navbar-brand">
+          
+            <img src="assets/img/17abd3e37a5d07b0251603af43db0caf.png" alt="Veggis" height="50px" width="40px">      
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContainer" aria-controls="navbarContainer" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContainer">
+          <form class="d-lg-none d-md-block search_mini_form" method="get" action="...">
+            <div class="input-group mb-3">
+              <input type="text" value="" name="q" class="form-control form-control-sm" onfocus="javascript:this.value=''" placeholder="Buscar Productos">
+              <button type="submit" class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>
+            </div>
+          <input type="hidden"></form>
+          <ul id="navbarContainerMobile" class="navbar-nav d-lg-none">               
+            <li class="nav-item  ">
+    <a href="index.html" title="Home" class="level-1 trsn nav-link">Home</a>        
+  </li>                               
+                    
+  
+    <!--Items De Navegacion-->
+            <li class="nav-item  ">
+    <a href="tables.html" title="Productos Disponibles" class="level-1 trsn nav-link">Productos Disponibles</a>        
+  </li>
+             <li class="nav-item  ">
+    <a href="acerca_de.html" title="Acerca De Nosotros" class="level-1 trsn nav-link">Acerca De Nosotros</a>        
+  </li>    
+            <li class="nav-item  ">
+    <a href="contact.html" title="Contacto" class="level-1 trsn nav-link">Contacto</a>
+    
+  </li>         
+            <li class="nav-item  ">
+    <a href="interfazventa.html" title="Datos Despacho" class="level-1 trsn nav-link">Datos Despacho</a>
+    
+  </li>                
+          </ul>
+          <ul class="nav navbar-nav float-right nav-top">              
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle trsn nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <span><i class="fas fa-globe"></i></span>
+                <span>Español (Chile)</span>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="http://127.0.0.1:5500/index.html/br/" class="trsn nav-link" title="Português (Brasil)">Português (Brasil)</a></li>
+                
+                <li><a href="http://127.0.0.1:5500/index.html/cl/" class="trsn nav-link" title="Español (Chile)">Español (Chile)</a></li>
+                
+                <li><a href="http://127.0.0.1:5500/index.html/co/" class="trsn nav-link" title="Español (Colombia)">Español (Colombia)</a></li>
+                
+                <li><a href="http://127.0.0.1:5500/index.html/" class="trsn nav-link" title="English">English</a></li>
+                
+                <li><a href="http://127.0.0.1:5500/index.html/pt/" class="trsn nav-link" title="Português (Portugal)">Português (Portugal)</a></li>
+                
+                <li><a href="http://127.0.0.1:5500/index.html/mx/" class="trsn nav-link" title="Español (Mexico)">Español (Mexico)</a></li>
+                
+                <li><a href="http://127.0.0.1:5500/index.html/es/" class="trsn nav-link" title="Español">Español</a></li>
+                
+              </ul>
+            </li>    
+            <li>
+                <a id="cart-link" href="https://bootstrap.jumpseller.com/br/cart" class="trsn nav-link" title="View/Edit Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="nav-bar-cart"><span class="cart-size">0</span> Product(s) | $0</span>
+                  </a>
+                </li>      
+                <li>
+                  <a href="login.html" id="login-link" class="trsn nav-link" title="Login toBootstrap">
+                    <i class="fas fa-user"></i>
+                    <span class="customer-name">
+                      Login
+                    </span>
+                  </a>
+                </li>      
+              </ul>
+              <form class="navbar-form float-right form-inline d-none d-lg-flex search_mini_form" method="get" action="">
+                  <input type="text" value="" name="q" class="form-control form-control-sm" onfocus="javascript:this.value=''" placeholder="Buscar Productos"> 
+                    <button type="submit" ><i class="fas fa-search"></i>
+                    </button> 
+                <input type="hidden"></form>
+                <ul class="social list-inline d-lg-none text-center">                   
+              </ul>
+            </div>
+          </div>
+        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-none d-lg-block">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarsContainer-2">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">Productos Disponibles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="acerca_de.html">Acerca De Nosotros</a>
+            </li>                
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="interfazventa.html">Datos despacho</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sitios de Interes
+                </a>
+             
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="..." target="_blank"></a>
+                    <a class="dropdown-item" href="..." target="_blank"></a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="..." target="_blank"></a>
+                </div>
+
+          <ul class="social navbar-toggler-right list-inline">                                
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--Fin navbar-->
+
+    <div><br></div>
+    <div><br></div>
+    <div><br></div>
+    <div><br></div>
+    <div><br></div>
+    <div><br></div>
+    <div><br></div>
+
+
+<!--Productos Disponibles-->
+    <div id="component-76145">
+        <div id="fatured-products-76145" class="container">
+            <!--Productos Section-->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="page-header">Productos Disponibles</h2>
+                        <hr>                   
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="interfazventa.html">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/tomatecherry.jpg" srcset="assets/img/tomatecherry.jpg 1x, assets/img/tomatecherry.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Tomate cherry</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1500
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/frutilla.jpg" srcset="assets/img/frutilla.jpg 1x,assets/img/frutilla.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Frutillas</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1.200
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/palta.jpg" srcset="assets/img/palta.jpg 1x, assets/img/palta.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Paltas</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $7.000
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/papa.jpg" srcset="assets/img/papa.jpg 1x, assets/img/papa.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Papas</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $600
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>     
+    </div> 
+
+    <div id="component-76145">
+        <div id="fatured-products-76145" class="container">
+            <!--Productos Section-->
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/aguavital.jpg" srcset="assets/img/aguavital.jpg 1x, assets/img/aguavital.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Agua Vital</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $800
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/scoreenergetica.jpg" srcset="assets/img/scoreenergetica.jpg 1x, assets/img/scoreenergetica.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Bebida Energetica Score</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1000
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/jugowhatts.jpg" srcset="assets/img/jugowhatts.jpg 1x, assets/img/jugowhatts.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Jugo Watts</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1.400
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/lovelemon.jpg" srcset="assets/img/lovelemon.jpg 1x, assets/img/lovelemon.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Love Lemon</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1.700
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="component-76145">
+        <div id="fatured-products-76145" class="container">
+            <!--Productos Section-->
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/fajitasrapiditas.jpg" srcset="assets/img/fajitasrapiditas.jpg 1x, assets/img/fajitasrapiditas.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Fajitas Rapiditas</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1000
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/panblancoartesano.jpg" srcset="assets/img/panblancoartesano.jpg 1x, assets/img/panblancoartesano.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Pan Blanco Artesano </a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1600
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/panintegralfuch.jpg" srcset="assets/img/panintegralfuch.jpg 1x, assets/img/panintegralfuch.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Pan Integral Fuch</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1.600
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/prepizza1mt.jpg" srcset="assets/img/prepizza1mt.jpg 1x, assets/img/prepizza1mt.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Prepizza 1 metro </a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $2.000
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="component-76145">
+        <div id="fatured-products-76145" class="container">
+            <!--Productos Section-->
+            <div class="row">
+                <div class="col-12">        
+                    <hr>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/galletasminni.jpg" srcset="assets/img/galletasminni.jpg 1x, assets/img/galletasminni.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Galletas Minni Mckay</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $250
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/papas lays.jpg" srcset="assets/img/papas lays.jpg 1x, assets/img/papas lays.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Papas lays</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1.950
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/bolzasa.jpg" srcset="assets/img/bolzasa.jpg 1x, assets/img/bolzasa.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Bolzasa</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1.000
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/protein+.jpg" srcset="assets/img/protein+.jpg 1x, assets/img/protein+.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Protein +</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $490
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="component-76145">
+        <div id="fatured-products-76145" class="container">
+            <!--Productos Section-->
+            <div class="row">
+                <div class="col-12">
+                
+                    <hr>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/lays tarros.jpg" srcset="assets/img/lays tarros.jpg 1x, assets/img/lays tarros.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Lays tarros</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1.490
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/unomasuno.jpg" srcset="assets/img/unomasuno.jpg 1x, assets/img/unomasuno.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">1+1</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $600
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/lecheentera.jpg" srcset="assets/img/lecheentera.jpg 1x, assets/img/lecheentera.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Leche Entera</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1.000
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 product-black">
+                    <a href="...">
+                        <img class="img-fluid img-portafolio img-hover mb-3" src="assets/img/mantequilla.jpg" srcset="assets/img/mantequilla.jpg 1x, assets/img/mantequilla.jpg 2x" alt="...">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="...">Mantequilla Soprole 1/4</a>
+                        </h3>
+                        <div class="price-mob mb-2">
+
+                            $1.350
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-danger text-white pt-5 pb-4">
+       
+        <div class="container text-center text-md-left">
+            
+          <div class="row text-center text-md-left">
+      
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Veggies</h5>
+              <p>¿Quiénes somos?
+                Somos un emprendimiento familiar, un minimarket hecho para cumplir tus expectativas.
+                Queremos entregarte... <a class="text-dark" href="acerca_de.html">Saber Mas</a> <link href="acerca_de.html"></p>
+              
+            </div>
+      
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Atajos</h5>
+            <p>
+              <a href="index.html" class="text-white" style="text-decoration: none;"> Home</a>
+            </p>
+            <p>
+              <a href="tables.html" class="text-white" style="text-decoration: none;"> Productos Disponibles</a>
+            </p>
+            <p>
+              <a href="contact.html" class="text-white" style="text-decoration: none;"> Contacto</a>
+            </p>
+            <p>
+              <a href="interfazventa.html" class="text-white" style="text-decoration: none;"> Datos Despacho</a>
+            </p>
+            <p>
+              <a href="login.html" class="text-white" style="text-decoration: none;"> Iniciar Sesion</a>
+            </p>
+      
+            </div>
+      
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Links Alternativos</h5>
+            <p>
+              <a href="https://www.google.com/?hl=es" class="text-white" style="text-decoration: none;"> Google </a>
+            </p>
+            <p>
+              <a href="https://mail.google.com/mail/u/0/#inbox" class="text-white" style="text-decoration: none;"> Gmail</a>
+            </p>
+            <p>
+              <a href="https://getbootstrap.com" class="text-white" style="text-decoration: none;">Bootstrap</a>
+            </p>
+            <p>
+              <a href="https://desarrolloweb.com/home/html" class="text-white" style="text-decoration: none;"> HTML</a>
+            </p>
+            </div>
+      
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contactos</h5>
+              <p>
+                <i class="fas fa-home mr-3"></i> RM, Av Carlos Valdovinos 27
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i>Veggies@gmail.com
+              </p>
+              <p>
+                <i class="fas fa-phone mr-3"></i>+56 12345678
+              </p>  
+              <p>
+                <i class="fas fa-print	 mr-3"></i>229951502
+              </p>
+            </div>
+            
+          </div>
+      
+          <hr class="mb-4">
+      
+          <div class="row align-items-center">
+            
+            <div class="col-md-7 col-lg-8">
+              <p>	Copyright ©2020 Derechos Reservados por:
+                <a href="#" style="text-decoration: none;">
+                  <strong class="text-warning">Veggies</strong>
+                </a></p>    
+              
+            </div>
+      
+            <div class="col-md-5 col-lg-4">
+              <div class="text-center text-md-right">
+      
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://twitter.com/?lang=es" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.linkedin.com" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.youtube.com" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+      
+        </div>
+        
+    </footer>
+
+
+    <!-- Javascript Optional -->
+    <!-- Jquery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
