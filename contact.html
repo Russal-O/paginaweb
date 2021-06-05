@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 
     <!-- CSS Propios -->
-    <link rel="stylesheet" href="stylescss/styles.css"> 
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">  
 
     <!--Logo de la pagina-->
     <link rel="icon" href="assets/img/17abd3e37a5d07b0251603af43db0caf.png" type="image/png">
@@ -22,140 +22,207 @@
     <!--Titulo de la pagina-->
     <title>Contacto</title>
 </head>
-<body>
+<body onload="startTime()">
 
 
 
-  <!--navbar-->
-  <div class="fixed-top" >
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-      <div class="container">
-        <a href="index.html" title="Veggies" class="navbar-brand">
-          
-            <img src="assets/img/17abd3e37a5d07b0251603af43db0caf.png" alt="Veggis" height="50px" width="40px">      
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContainer" aria-controls="navbarContainer" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarContainer">
-          <form class="d-lg-none d-md-block search_mini_form" method="get" action="...">
-            <div class="input-group mb-3">
-              <input type="text" value="" name="q" class="form-control form-control-sm" onfocus="javascript:this.value=''" placeholder="Buscar Productos">
-              <button type="submit"><i class="fas fa-search"></i></button>
-            </div>
-          <input type="hidden"></form>
-          <ul id="navbarContainerMobile" class="navbar-nav d-lg-none">               
-            <li class="nav-item  ">
-    <a href="index.html" title="Home" class="level-1 trsn nav-link">Home</a>        
-  </li>                               
-                    
-  
-    <!--Items De Navegacion-->
-            <li class="nav-item  ">
-    <a href="tables.html" title="Productos Disponibles" class="level-1 trsn nav-link">Productos Disponibles</a>        
-  </li>
-             <li class="nav-item  ">
-    <a href="acerca_de.html" title="Acerca De Nosotros" class="level-1 trsn nav-link">Acerca De Nosotros</a>        
-  </li>    
-            <li class="nav-item  ">
-    <a href="contact.html" title="Contacto" class="level-1 trsn nav-link">Contacto</a>
-    
-  </li>         
-            <li class="nav-item  ">
-    <a href="interfazventa.html" title="Datos Despacho" class="level-1 trsn nav-link">Datos Despacho</a>
-    
-  </li>                
-          </ul>
-          <ul class="nav navbar-nav float-right nav-top">              
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle trsn nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <span><i class="fas fa-globe"></i></span>
-                <span>Español (Chile)</span>
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                
-                <li><a href="http://127.0.0.1:5500/index.html/br/" class="trsn nav-link" title="Português (Brasil)">Português (Brasil)</a></li>
-                
-                <li><a href="http://127.0.0.1:5500/index.html/cl/" class="trsn nav-link" title="Español (Chile)">Español (Chile)</a></li>
-                
-                <li><a href="http://127.0.0.1:5500/index.html/co/" class="trsn nav-link" title="Español (Colombia)">Español (Colombia)</a></li>
-                
-                <li><a href="http://127.0.0.1:5500/index.html/" class="trsn nav-link" title="English">English</a></li>
-                
-                <li><a href="http://127.0.0.1:5500/index.html/pt/" class="trsn nav-link" title="Português (Portugal)">Português (Portugal)</a></li>
-                
-                <li><a href="http://127.0.0.1:5500/index.html/mx/" class="trsn nav-link" title="Español (Mexico)">Español (Mexico)</a></li>
-                
-                <li><a href="http://127.0.0.1:5500/index.html/es/" class="trsn nav-link" title="Español">Español</a></li>
-                
-              </ul>
-            </li>    
-            <li>
-                <a id="cart-link" href="interfazventa.html" class="trsn nav-link" title="View/Edit Cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span id="nav-bar-cart"><span class="cart-size">0</span> Product(s) | $0</span>
-                  </a>
-                </li>      
-                <li>
-                  <a href="login.html" id="login-link" class="trsn nav-link" title="Login toBootstrap">
-                    <i class="fas fa-user"></i>
-                    <span class="customer-name">
-                      Login
-                    </span>
-                  </a>
-                </li>      
-              </ul>
-              <form class="navbar-form float-right form-inline d-none d-lg-flex search_mini_form" method="get" action="">
-                  <input type="text" value="" name="q" class="form-control form-control-sm" onfocus="javascript:this.value=''" placeholder="Buscar Productos"> 
-                    <button type="submit" ><i class="fas fa-search"></i>
-                    </button> 
-                <input type="hidden"></form>
-                <ul class="social list-inline d-lg-none text-center">                   
-              </ul>
-            </div>
-          </div>
-        </nav>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-none d-lg-block">
-      <div class="container">
-        <div class="collapse navbar-collapse" id="navbarsContainer-2">
-          <ul class="navbar-nav mr-auto">
-            
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">Productos Disponibles</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="acerca_de.html">Acerca De Nosotros</a>
-            </li>                
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="interfazventa.html">Datos despacho</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Sitios de Interes
-                </a>
-             
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="..." target="_blank"></a>
-                    <a class="dropdown-item" href="..." target="_blank"></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="..." target="_blank"></a>
-                </div>
 
-          <ul class="social navbar-toggler-right list-inline">                                
-          </ul>
-        </div>
+<!--navbar-->
+     
+<div class="fixed-top" >
+       
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container">
+      <a href="index.html" title="Veggies" class="navbar-brand">
+        
+          <img src="assets/img/17abd3e37a5d07b0251603af43db0caf.png" alt="Veggis" height="50px" width="40px">      
+      </a>
+      <div class="clockdate">
+        <span id="time"></span>
+        <span id="date"></span>
       </div>
-    </nav>
-  </div>
-  <!--Fin navbar-->    
-    
+    <div class="clockdate">
+      <span id="time"></span>
+      <span id="date"></span>
+    </div>
+    <script>
+        function startTime() {      
+            var today = new Date(),
+                hours = today.getHours(),
+                minutes = today.getMinutes(),
+                date = today.getDate(),
+                day = today.getDay(),
+                month = today.getMonth();
+            hours = (hours == 0) ? 12 : hours;
+            hours = (hours > 12) ? hours - 12 : hours;
+
+            hours = checkTime(hours);
+            minutes = checkTime(minutes);
+            var dia = ["Domingo", " Lunes", "Martes", "Miercoles", "Jueves", "viernes", "Sabado"],
+                mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            var hr = document.getElementById('time').innerHTML = hours + ":" + minutes,
+                dt = document.getElementById('date').innerHTML = dia[day] + ", " + date + " De " + mes[month];
+            var time = setTimeout(function() {
+                startTime();
+            }, 500);
+        }
+        function checkTime(e) {
+            if (e < 10) {
+                e = "0" + e;
+            }
+            return e;
+        }
+    </script>       
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContainer" aria-controls="navbarContainer" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContainer">
+        <form class="d-lg-none d-md-block search_mini_form" method="get" action="...">
+          <div class="input-group mb-3">
+            <input type="text" value="" name="q" class="form-control form-control-sm" onfocus="javascript:this.value=''" placeholder="Buscar Productos">
+            <button type="submit" ><i class="fas fa-search"></i></button>                 
+          </div>
+          
+        <input type="hidden"></form>
+        <ul id="navbarContainerMobile" class="navbar-nav d-lg-none">               
+          <li class="nav-item  ">
+  <a href="index.html" title="Home" class="level-1 trsn nav-link">Home</a>        
+                   
+                  
+
+  <!--Items De Navegacion-->
+          <li class="nav-item  ">
+  <a href="tables.html" title="Productos Disponibles" class="level-1 trsn nav-link">Productos Disponibles</a>        
+</li>
+           <li class="nav-item  ">
+  <a href="acerca_de.html" title="Acerca De Nosotros" class="level-1 trsn nav-link">Acerca De Nosotros</a>        
+</li>    
+          <li class="nav-item  ">
+  <a href="contact.html" title="Contacto" class="level-1 trsn nav-link">Contacto</a>
+  
+</li>         
+          <li class="nav-item  ">
+  <a href="interfazventa.html" title="Datos Despacho" class="level-1 trsn nav-link">Datos Despacho</a>
+  
+</li>
+          <li class="nav-item">
+  <a class="nav-link" href="randomum.html">API RandomUM</a>
+
+</li>
+
+          <li class="nav-item">
+  <a class="nav-link" href="conversion.html">Conversion de moneda</a>        
+</li>
+
+          <li class="nav-item">
+  <a class="nav-link" href="conversion.html">Conversion de moneda</a>
+
+</li>
+
+        </ul>
+        <ul class="nav navbar-nav float-right nav-top">              
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle trsn nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <span><i class="fas fa-globe"></i></span>
+              <span>Español (Chile)</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              
+              <li><a href="http://127.0.0.1:5500/index.html/br/" class="trsn nav-link" title="Português (Brasil)">Português (Brasil)</a></li>
+              
+              <li><a href="http://127.0.0.1:5500/index.html/cl/" class="trsn nav-link" title="Español (Chile)">Español (Chile)</a></li>
+              
+              <li><a href="http://127.0.0.1:5500/index.html/co/" class="trsn nav-link" title="Español (Colombia)">Español (Colombia)</a></li>
+              
+              <li><a href="http://127.0.0.1:5500/index.html/" class="trsn nav-link" title="English">English</a></li>
+              
+              <li><a href="http://127.0.0.1:5500/index.html/pt/" class="trsn nav-link" title="Português (Portugal)">Português (Portugal)</a></li>
+              
+              <li><a href="http://127.0.0.1:5500/index.html/mx/" class="trsn nav-link" title="Español (Mexico)">Español (Mexico)</a></li>
+              
+              <li><a href="http://127.0.0.1:5500/index.html/es/" class="trsn nav-link" title="Español">Español</a></li>
+              
+            </ul>
+          </li>    
+          <li>
+              <a id="cart-link" href="interfazventa.html" class="trsn nav-link" title="View/Edit Cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span id="nav-bar-cart"><span class="cart-size">0</span> Product(s) | $0</span>
+                </a>
+              </li>      
+              <li>
+                <a href="login.html" id="login-link" class="trsn nav-link" title="Login toBootstrap">
+                  <i class="fas fa-user"></i>
+                  <span class="customer-name">
+                    Login
+                  </span>
+                </a>
+              </li>      
+            </ul>
+
+            <button type="submit" onclick="apagarLuz()"><i class="fas fa-moon"></i></button></button> 
+            <button type="submit" onclick="encenderLuz()"><i class="fas fa-sun"></i></button></button> 
+
+            <form class="navbar-form float-right form-inline d-none d-lg-flex search_mini_form" method="get" action="">
+                <input type="text" value="" name="q" class="form-control form-control-sm" onfocus="javascript:this.value=''" placeholder="Buscar Productos"> 
+                  <button type="submit" ><i class="fas fa-search"></i>
+                  </button> 
+              <input type="hidden"></form>
+              <ul class="social list-inline d-lg-none text-center">                   
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-none d-lg-block">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarsContainer-2">
+        <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="tables.html">Productos Disponibles</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="acerca_de.html">Acerca De Nosotros</a>
+          </li>                
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="interfazventa.html">Datos despacho</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="randomum.html">API RandomUM</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="conversion.html">Conversion de moneda</a>
+          </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sitios de Interes
+              </a>
+           
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="..." target="_blank"></a>
+                  <a class="dropdown-item" href="..." target="_blank"></a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="..." target="_blank"></a>
+              </div>
+
+        <ul class="social navbar-toggler-right list-inline">                                
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!--Fin navbar-->
     <div><br></div>
     <div><br></div>
     <div><br></div>
@@ -261,117 +328,128 @@
 
 
     
-  <!-- Footer Section -->
-  <footer class="bg-danger text-white pt-5 pb-4">
+<!-- Footer Section -->
+<footer class="bg-danger text-white pt-5 pb-4">
        
-    <div class="container text-center text-md-left">
-        
-      <div class="row text-center text-md-left">
-  
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Veggies</h5>
-          <p>¿Quiénes somos?
-            Somos un emprendimiento familiar, un minimarket hecho para cumplir tus expectativas.
-            Queremos entregarte... <a class="text-dark" href="acerca_de.html">Saber Mas</a> <link href="acerca_de.html"></p>
-          
-        </div>
-  
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Atajos</h5>
-        <p>
-          <a href="index.html" class="text-white" style="text-decoration: none;"> Home</a>
-        </p>
-        <p>
-          <a href="tables.html" class="text-white" style="text-decoration: none;"> Productos Disponibles</a>
-        </p>
-        <p>
-          <a href="contact.html" class="text-white" style="text-decoration: none;"> Contacto</a>
-        </p>
-        <p>
-          <a href="interfazventa.html" class="text-white" style="text-decoration: none;"> Datos Despacho</a>
-        </p>
-        <p>
-          <a href="login.html" class="text-white" style="text-decoration: none;"> Iniciar Sesion</a>
-        </p>
-  
-        </div>
-  
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Links Alternativos</h5>
-        <p>
-          <a href="https://www.google.com/?hl=es" class="text-white" style="text-decoration: none;"> Google </a>
-        </p>
-        <p>
-          <a href="https://mail.google.com/mail/u/0/#inbox" class="text-white" style="text-decoration: none;"> Gmail</a>
-        </p>
-        <p>
-          <a href="https://getbootstrap.com" class="text-white" style="text-decoration: none;">Bootstrap</a>
-        </p>
-        <p>
-          <a href="https://desarrolloweb.com/home/html" class="text-white" style="text-decoration: none;"> HTML</a>
-        </p>
-        </div>
-  
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contactos</h5>
-          <p>
-            <i class="fas fa-home mr-3"></i> RM, Av Carlos Valdovinos 27
-          </p>
-          <p>
-            <i class="fas fa-envelope mr-3"></i>Veggies@gmail.com
-          </p>
-          <p>
-            <i class="fas fa-phone mr-3"></i>+56 12345678
-          </p>  
-          <p>
-            <i class="fas fa-print	 mr-3"></i>229951502
-          </p>
-        </div>
+  <div class="container text-center text-md-left">
+      
+    <div class="row text-center text-md-left">
+
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Veggies</h5>
+        <p>¿Quiénes somos?
+          Somos un emprendimiento familiar, un minimarket hecho para cumplir tus expectativas.
+          Queremos entregarte... <a class="text-dark" href="acerca_de.html">Saber Mas</a> <link href="acerca_de.html"></p>
         
       </div>
-  
-      <hr class="mb-4">
-  
-      <div class="row align-items-center">
-        
-        <div class="col-md-7 col-lg-8">
-          <p>	Copyright ©2020 Derechos Reservados por:
-            <a href="#" style="text-decoration: none;">
-              <strong class="text-warning">Veggies</strong>
-            </a></p>    
-          
-        </div>
-  
-        <div class="col-md-5 col-lg-4">
-          <div class="text-center text-md-right">
-  
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://twitter.com/?lang=es" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.youtube.com" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
-              </li>
-            </ul>
-            
-          </div>
-          
-        </div>
-        
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Atajos</h5>
+      <p>
+        <a href="index.html" class="text-white" style="text-decoration: none;"> Home</a>
+      </p>
+      <p>
+        <a href="tables.html" class="text-white" style="text-decoration: none;"> Productos Disponibles</a>
+      </p>
+      <p>
+        <a href="acerca_de.html" class="text-white" style="text-decoration: none;"> Acerca de nosotros</a>
+      </p>
+      <p>
+        <a href="contact.html" class="text-white" style="text-decoration: none;"> Contacto</a>
+      </p>
+      <p>
+        <a href="interfazventa.html" class="text-white" style="text-decoration: none;"> Datos Despacho</a>
+      </p>
+      <p>
+        <a href="randomum.html" class="text-white" style="text-decoration: none;"> API RandomUM</a>
+      </p>
+      <p>
+        <a href="conversion.html" class="text-white" style="text-decoration: none;"> Conversion de moneda</a>
+      </p>  
+      <p>
+        <a href="login.html" class="text-white" style="text-decoration: none;"> Iniciar Sesion</a>
+      </p>
+
       </div>
-  
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Links Alternativos</h5>
+      <p>
+        <a href="https://www.google.com/?hl=es" class="text-white" style="text-decoration: none;"> Google </a>
+      </p>
+      <p>
+        <a href="https://mail.google.com/mail/u/0/#inbox" class="text-white" style="text-decoration: none;"> Gmail</a>
+      </p>
+      <p>
+        <a href="https://getbootstrap.com" class="text-white" style="text-decoration: none;">Bootstrap</a>
+      </p>
+      <p>
+        <a href="https://desarrolloweb.com/home/html" class="text-white" style="text-decoration: none;"> HTML</a>
+      </p>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contactos</h5>
+        <p>
+          <i class="fas fa-home mr-3"></i> RM, Av Carlos Valdovinos 27
+        </p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i>Veggies@gmail.com
+        </p>
+        <p>
+          <i class="fas fa-phone mr-3"></i>+56 12345678
+        </p>  
+        <p>
+          <i class="fas fa-print	 mr-3"></i>229951502
+        </p>
+      </div>
+      
     </div>
-    
+
+    <hr class="mb-4">
+
+    <div class="row align-items-center">
+      
+      <div class="col-md-7 col-lg-8">
+        <p>	Copyright ©2020 Derechos Reservados por:
+          <a href="#" style="text-decoration: none;">
+            <strong class="text-warning">Veggies</strong>
+          </a></p>    
+        
+      </div>
+
+      <div class="col-md-5 col-lg-4">
+        <div class="text-center text-md-right">
+
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/?lang=es" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </div>
+  
 </footer>
 
 
+
     <!-- Javascript Optional -->
+    <script src="/modooscuro.js"></script>
     <!-- Jquery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

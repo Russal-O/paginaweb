@@ -1,2 +1,0 @@
-# proyectoweb
-programacion web minimarket
